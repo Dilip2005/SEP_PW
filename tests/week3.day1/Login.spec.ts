@@ -6,9 +6,9 @@ test('Login Page',async({page})=>{
     // browser-context-page -{page}
     await page.goto("https://leaftaps.com/opentaps/control/login")
 
-    await page.locator("#username").fill("DemoCSR")
-    await page.locator("[name='PASSWORD']").fill("crmsfa")
-    await page.locator(".decorativeSubmit").click()
+    await page.locator("//input[@id='username']").fill("DemoCSR")
+    await page.locator("//input[@name='PASSWORD']").fill("crmsfa")
+    await page.locator("//input[@class='decorativeSubmit']").click()
     await page.locator(`text='CRM/SFA'`).click()
 // Changed locator use Xpath
     //get title of the page
