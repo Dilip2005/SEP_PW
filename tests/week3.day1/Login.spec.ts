@@ -10,7 +10,7 @@ test('Login Page',async({page})=>{
     await page.locator("[name='PASSWORD']").fill("crmsfa")
     await page.locator(".decorativeSubmit").click()
     await page.locator(`text='CRM/SFA'`).click()
-
+// Changed locator use Xpath
     //get title of the page
     const title=await page.title()
     console.log(title)
